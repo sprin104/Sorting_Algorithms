@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <a class="navbar-item">
+        <button class="button is-success">Heap Sort</button>
+      </a>
+      <a class="navbar-item">
+        <button class="button is-primary">Merge Sort</button>
+      </a>
+      <a class="navbar-item">
+        <button class="button is-primary">Quick Sort</button>
+      </a>
+      <a class="navbar-item">
+        <button class="button is-primary">insertion Sort</button>
+      </a>
+      <a class="navbar-item">
+        <button class="button is-primary">quick Sort</button>
+      </a>
+      <a class="navbar-item">
+        <button class="button is-primary">Merge Sort</button>
+      </a>
+      <a class="navbar-item">
+        <button class="button is-danger">Jim Sort</button>
+      </a>
+
+
+
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            Jobs
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80 style="background: purple">
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+
+                <div class="algos">
+                    <button class="Button">Bubble sort</button>
+                    <button class="Button">Selection sort</button>
+                    <button >Insertion</button>
+                    <button >Merge sort</button>
+                    <button >Quick sort</button>
+                    <button style="margin-right: 0px;">Heap sort</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <div class="dropdown">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>Algorithm Info</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Bubble Sort
+                  </a>
+                  <a href class="dropdown-item">
+                    Merge Sort
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Quick Sort
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Heap Sort
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+                we are in a box
+                <button class="button is-success is-small">
+                    next
+                </button>
+            </div>
+        </div>
+
+        <div id="array_container">
+
+        </div>
+
+        <div id="Info_Cont2">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><abbr title="Position">Pos</abbr></th>
+                  <th>Name</th>
+                  <th><abbr title="Played">time</abbr></th>
+                </tr>
+              </thead>
+            </table>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="visualizations.js"></script>
+
+    <script src="bubble_sort.js"></script>
+    <script src="selection_sort.js"></script>
+    <script src="insertion_sort.js"></script>
+    <script src="/merge_sort.js"></script>
+    <script src="quick_sort.js"></script>
+    <script src="heap_sort.js"></script>
+</body>
+
+
+
+</html>
