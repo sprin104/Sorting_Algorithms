@@ -23,9 +23,9 @@ function Bubble()
             }
             div_update(divs[j],div_sizes[j], "turquoise");//Color update
         }
-        div_update(divs[j],div_sizes[j], "green");//Color update
+        div_update(divs[j],div_sizes[j], "#48c78e");//Color update
     }
-    div_update(divs[0],div_sizes[0], "green");//Color update
+    div_update(divs[0],div_sizes[0], "#48c78e");//Color update
 
     enable_buttons();
 }
