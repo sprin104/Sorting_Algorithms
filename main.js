@@ -75,6 +75,7 @@ function runalgo()
                         break;
         case "Insertion":Insertion();
                         break;
+
         case "Merge sort":Merge();
                         break;
         case "Quick sort":Quick();
