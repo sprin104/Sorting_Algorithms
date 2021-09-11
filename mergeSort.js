@@ -1,4 +1,6 @@
+console.log("is Merge somehow the problem?")
 /*
+
 function Merge()
 {
     c_delay=0;
