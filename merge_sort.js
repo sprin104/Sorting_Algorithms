@@ -41,7 +41,7 @@ function merge_sort(start,mid,end)
     for(var t=0;t<k;t++)
     {
         div_sizes[start++]=Arr[t];
-        div_update(divs[start-1],div_sizes[start-1],"green");//Color update
+        div_update(divs[start-1],div_sizes[start-1],"#48c78e");//Color update
     }
 }
 

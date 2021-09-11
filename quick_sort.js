@@ -31,8 +31,8 @@ function quick_partition (start, end)
                 div_update(divs[i],div_sizes[i],"red");//Height update
                 div_update(divs[j],div_sizes[j],"red");//Height update
 
-                div_update(divs[i],div_sizes[i],"blue");//Height update
-                div_update(divs[j],div_sizes[j],"blue");//Height update
+                div_update(divs[i],div_sizes[i],"turquoise");//Height update
+                div_update(divs[j],div_sizes[j],"turquoise");//Height update
 
                 i += 1;
             }
@@ -49,7 +49,7 @@ function quick_partition (start, end)
 
     for(var t=start;t<=i;t++)
     {
-        div_update(divs[t],div_sizes[t],"green");//Color update
+        div_update(divs[t],div_sizes[t],"#48c78e");//Color update
     }
 
     return i-1;//return the position of the pivot
